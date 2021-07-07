@@ -41,7 +41,7 @@ Over 100 million people visit Quora every month, so it's no surprise that many p
 - Size of Train.csv - **60MB** 
 - Number of rows in Train.csv - **404,290**
 
-## Example Data Points
+### Example Data Points
 
 **id** | **qid1** | **qid2** | **question1** | **question2** | **is_duplicate**
 --- | --- | --- | --- | --- | ---
@@ -50,4 +50,13 @@ Over 100 million people visit Quora every month, so it's no surprise that many p
 7 | 15 | 16 | How can I be a good geologist? | What should I do to be a great geologist? | 1 
 11 | 23 | 24 | How do I read and find my YouTube comments? | How can I see all my Youtube comments? | 1
 
+**It is a binary classification problem, for a given pair of questions we need to predict if they are duplicate or not.**
 
+### Performance Metrics
+
+* [Log-loss](https://www.kaggle.com/wiki/LogarithmicLoss)
+* Binary Confusion Matrix
+
+### Train-Test Split Ratio
+
+**70:30** or **80:20**
