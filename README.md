@@ -26,6 +26,18 @@ Over 100 million people visit Quora every month, so it's no surprise that many p
 
 ### Real World Constraints
 
+1. The cost of a mis-classification can be very high.
+2. You would want a probability of a pair of questions to be duplicates so that you can choose any threshold of choice.
+3. No strict latency concerns.
+4. Interpretability is partially important.
+
+
 ## Machine Learning Problem
 
+### Data Overview
+
+- Data will be in a file [**train.csv**](train.csv)
+- Train.csv contains 5 columns : **qid1, qid2, question1, question2, is_duplicate**
+- Size of Train.csv - **60MB** 
+- Number of rows in Train.csv = **404,290**
 
